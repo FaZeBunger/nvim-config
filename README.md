@@ -5,7 +5,8 @@
 - NerdFonts (For Icons, Optional)
 
 
-# Manual Installation
+# Installation
+## Manual 
 - Install Neovim 0.9.0 or higher from [Neovim's official website](https://neovim.io/)
 - Install Git from [Git's official website](https://git-scm.com/)
 - Install RipGrep [Instructions](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
@@ -18,7 +19,7 @@
 git clone https://github.com/FaZeBunger/nvim-config (Your Neovim Config Directory)
 ```
 
-# Automatic Installation (Windows Only)
+## Automatic (Windows Only)
 - Make a backup of your current Neovim configuration
 - Install a [NerdFont](https://www.nerdfonts.com/) (***Optional***)
 - Install Neovim 0.9.0 or higher from [Neovim's official website](https://neovim.io/)
