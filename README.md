@@ -6,7 +6,7 @@
 
 
 # Installation
-## Manual 
+## Manual Installation (Recommended)
 - Install Neovim 0.9.0 or higher from [Neovim's official website](https://neovim.io/)
 - Install Git from [Git's official website](https://git-scm.com/)
 - Install RipGrep [Instructions](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
@@ -19,7 +19,7 @@
 git clone https://github.com/FaZeBunger/nvim-config (Your Neovim Config Directory)
 ```
 
-## Automatic (Windows Only)
+## Automatic Installation (Windows Only)
 - Make a backup of your current Neovim configuration
 - Install a [NerdFont](https://www.nerdfonts.com/) (***Optional***)
 - Install Neovim 0.9.0 or higher from [Neovim's official website](https://neovim.io/)
@@ -45,7 +45,7 @@ iwr -useb https://raw.githubusercontent.com/FaZeBunger/nvim-config/main/install.
 - Autoformatting on write through LSP
 
 # Keybindings
-- `<leader>` is set to ` ` (Space)
+- `<leader>` is set to `<Space>`
 - `<leader>pf` - Search for files in the directory neovim was launched in using Telescope
 - `<leader>ps` - Search for keywords in files in the directory neovim was launched in using Telescope
 - `gd` - Jump to the definition of a variable
@@ -85,3 +85,19 @@ lspconfig[<LSP_NAME>].setup {
 ```
 Replacing `<LSP_NAME>` with the name of the LSP you installed.
 
+# Navigating the File Explorer
+This config uses [Oil.nvim](https://github.com/stevearc/oil.nvim) for the file explorer, which you can open using `<leader>pv`. 
+You may use the following keybindings to navigate the file explorer:
+- `-` - Go up a directory
+- `<CR>` - Open the file or directory
+To close the file explorer you may use `:q` or `:q!` to force close it, though I recommend using `:q` to close it.
+Oil.nvim allows you to create files or directories like you would in a buffer. Simply enter Insert mode, and type the name of the file, for example `test.txt`, and then write the changes with `:w`.
+To make a directory, simply type the name of the directory, for example `test/`, and then write the changes with `:w`.
+To delete a file or directory, simply navigate to the file or directory you want to delete, and then use `dd` to delete it like you would a line of text in any other file.
+
+# Copilot
+Enable Copilot with `:Copilot auth` and sign in through github in your browser. 
+
+# Adding Plugins
+To add a plugin, simply add a new file to the `lua/Ethan/plugins` directory with the name of the plugin you want to add, and format it like every other plugin file.
+Then restart neovim, and Lazy.nvim will automatically load the plugin. For more customization, I recommend reading the documentation for [Lazy.nvim](https://github.com/folke/lazy.nvim)
