@@ -90,6 +90,7 @@ This config uses [Oil.nvim](https://github.com/stevearc/oil.nvim) for the file e
 You may use the following keybindings to navigate the file explorer:
 - `-` - Go up a directory
 - `<CR>` - Open the file or directory
+
 To close the file explorer you may use `:q` or `:q!` to force close it, though I recommend using `:q` to close it.
 Oil.nvim allows you to create files or directories like you would in a buffer. Simply enter Insert mode, and type the name of the file, for example `test.txt`, and then write the changes with `:w`.
 To make a directory, simply type the name of the directory, for example `test/`, and then write the changes with `:w`.
