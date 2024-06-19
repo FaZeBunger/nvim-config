@@ -24,7 +24,6 @@ git clone https://github.com/FaZeBunger/nvim-config (Your Neovim Config Director
 - Install Neovim 0.9.0 or higher from [Neovim's official website](https://neovim.io/)
 - Install a C/C++ compiler (***This is necessary for some LSP's to install through Mason***)
 - Download the install script from the [Releases](https://github.com/FaZeBunger/nvim-config/releases/latest) page
-- Run the script in PowerShell
 OR
 - Run the following command in PowerShell
 ```powershell
