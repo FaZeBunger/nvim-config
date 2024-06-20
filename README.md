@@ -1,12 +1,14 @@
-# Requirements
+# My Neovim Configuration
+
+## Requirements
 - Neovim >= 0.9.0
 - Git
 - WinGet (For Automatic Install, Windows only, comes pre-installed with Windows 11)
 - NerdFonts (For Icons, Optional)
 
 
-# Installation
-## Manual Installation (Recommended)
+## Installation
+### Manual Installation (Recommended)
 - Install Neovim 0.9.0 or higher from [Neovim's official website](https://neovim.io/)
 - Install Git from [Git's official website](https://git-scm.com/)
 - Install RipGrep [Instructions](https://github.com/BurntSushi/ripgrep?tab=readme-ov-file#installation)
@@ -19,7 +21,7 @@
 git clone https://github.com/FaZeBunger/nvim-config (Your Neovim Config Directory)
 ```
 
-## Automatic Installation (Windows Only)
+### Automatic Installation (Windows Only)
 - Make a backup of your current Neovim configuration
 - Install a [NerdFont](https://www.nerdfonts.com/) (***Optional***)
 - Install Neovim 0.9.0 or higher from [Neovim's official website](https://neovim.io/)
@@ -31,11 +33,11 @@ OR
 iwr -useb https://raw.githubusercontent.com/FaZeBunger/nvim-config/main/install.exe | iex
 ```
 
-# Known Bugs 
+## Known Bugs 
 - Telescope will sometimes not load correctly, and neovim will throw an error on launch. I am not sure what causes this, To avoid this I simply restart neovim and it works fine.
 - Sometimes Telescope behaves weirdly when messing with files on a different drive than C:, I am not sure what causes this, but I am looking into it.
 
-# Features
+## Features
 - This config uses [Lazy.nvim](https://github.com/folke/lazy.nvim)
 - This config uses [Mason.nvim](https://github.com/williamboman/mason.nvim)
 - Language Server Protocol (LSP) Support for Autocompletion and Suggestions
@@ -44,7 +46,7 @@ iwr -useb https://raw.githubusercontent.com/FaZeBunger/nvim-config/main/install.
 - Git Integration through Fugitive
 - Autoformatting on write through LSP
 
-# Keybindings
+## Keybindings
 - `<leader>` is set to `<Space>`
 - `<leader>pf` - Search for files in the directory neovim was launched in using Telescope
 - `<leader>ps` - Search for keywords in files in the directory neovim was launched in using Telescope
@@ -56,12 +58,12 @@ iwr -useb https://raw.githubusercontent.com/FaZeBunger/nvim-config/main/install.
 - `gc` - Comment out the current selection (Visual Mode)
 
 
-# Git Integration
+## Git Integration
 This config uses Fugitive for Git Integration and you may use `<leader>gs` to control git through Fugitive. 
 Then you may use `s` to stage a file, `ss` to stage all files, and `cc` to commit. 
 Fugitive also supports `:Git` to run git commands such as `:Git pull` or `:Git push`.
 
-# LSP
+## LSP
 This config uses LSP for autocompletion and suggestions. Currently, the following LSP's are installed:
 - Lua
 - Python
@@ -85,7 +87,7 @@ lspconfig[<LSP_NAME>].setup {
 ```
 Replacing `<LSP_NAME>` with the name of the LSP you installed.
 
-# Navigating the File Explorer
+## Navigating the File Explorer
 This config uses [Oil.nvim](https://github.com/stevearc/oil.nvim) for the file explorer, which you can open using `<leader>pv`. 
 You may use the following keybindings to navigate the file explorer:
 - `-` - Go up a directory
@@ -96,9 +98,9 @@ Oil.nvim allows you to create files or directories like you would in a buffer. S
 To make a directory, simply type the name of the directory, for example `test/`, and then write the changes with `:w`.
 To delete a file or directory, simply navigate to the file or directory you want to delete, and then use `dd` to delete it like you would a line of text in any other file.
 
-# Copilot
+## Copilot
 Enable Copilot with `:Copilot auth` and sign in through github in your browser. 
 
-# Adding Plugins
+## Adding Plugins
 To add a plugin, simply add a new file to the `lua/Ethan/plugins` directory with the name of the plugin you want to add, and format it like every other plugin file.
 Then restart neovim, and Lazy.nvim will automatically load the plugin. For more customization, I recommend reading the documentation for [Lazy.nvim](https://github.com/folke/lazy.nvim)
